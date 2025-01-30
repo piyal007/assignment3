@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                accent: '#FFDC26',
+              }
+            }
+          }
+        }
+      </script>
+
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="style.css">
+
+    <title>Pets Products</title>
+</head>
+<body class="sora-font">
+<!-- Navbar -->
+    <nav class="navbar bg-[#FFF9F4]">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="logo flex items-center gap-2">
+                <img src="assets/logo-header.png" alt="Logo">
+                <h3 class="text-[#111111] font-semibold">Browse<span class="text-accent">4</span>Pets</h3>
+            </div>
+            <div class="menu">
+                <ul class="flex gap-1">
+                    <li class="cursor-pointer"><a href="">Find a pet</a></li>
+                    <li class="cursor-pointer"><a href="">Breeds</a></li>
+                    <li class="cursor-pointer"><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <button class="px-5 py-2 rounded-md border-0">Login</button>
+                <button class="px-5 py-2 rounded-md bg-accent border-0 hover:bg-slate-50">Register</button>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
