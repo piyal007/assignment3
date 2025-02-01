@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font Awesome -->
-    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Google Fonts -->
@@ -32,11 +31,16 @@
                 black: '#111111',
                 primaryC: '#FFFFFF',
                 secondaryC: '#FFF9F4',
-                cardColor: '#F9DF8A'
+                cardColor: '#F9DF8A',
+                footerColor: 'rgba(255, 220, 38, 0.50)'
               },
               container: {
                 center: true,
-                padding: '2rem',
+                DEFAULT: '1rem',
+                sm: '2rem',
+                lg: '4rem',
+                xl: '5rem',
+                '2xl': '6rem',
               },
               
             },
@@ -176,19 +180,19 @@
       </div>
     </section>
     
-    <!-- Product Section -->
+    <!-- Trending Products Section -->
      <div class="section product-section my-10 bg-secondaryC py-24">
       <div class="container">
 
       <div class="card-area">
         <h2 class="font-adlam text-4xl mb-10">Trending Pet Products</h2>
-         <div class="card-container  grid grid-cols-2 lg:grid-cols-5 gap-3">
+         <div class="card-container grid grid-cols-2 lg:grid-cols-5 gap-3">
           <!-- Big card -->
-            <div class="big-card bg-cardColor py-10 px-5 rounded-md col-span-2 row-span-3 border-gray-900 shadow-md">
+            <div class="big-card relative bg-cardColor py-10 px-5 rounded-md col-span-2 row-span-3 border-gray-900 shadow-md">
               <h3 class="font-adlam text-3xl">T- Shirt For Dogs</h3>
               <p class="my-4">Discover a world of treats, toys, and essentials handpicked for</p>
               <button class="px-5 py-2 rounded-md border-solid border-2 bg-secondaryC border-accent hover:bg-accent hover:text-primaryC">Shop Now</button>
-              <!-- <img src="assets/cute-pet-small.png" alt=""> -->
+              <img class="absolute bottom-5 right-5" src="assets/cute-pet-small.png" alt="">
             </div>
             <!-- card 1 -->
              <div class="card1 rounded-md bg-primaryC grid items-center justify-start border-gray-900 shadow-md">
@@ -349,7 +353,7 @@
      </div>
     
     <!-- Low Price Section -->
-     <section class="lowPrice-section py-24">
+     <section class="lowPrice-section py-24 mb-60">
       <div class="container">
         <h2 class="font-adlam text-4xl mb-10">Everyday low Price</h2>
 
@@ -372,14 +376,14 @@
           </div>
 
           <!-- grid child 2 -->
-          <div class="pet-tShirt bg-gradient-to-r from-[#FFF9F4] to-[#F9E191] rounded-xl py-20 px-5">
+          <div class="pet-tShirt relative bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-xl py-20 px-5">
             <div class="grid grid-cols-2 place-items-center">
               <div>
                 <h3 class="text-xl font-adlam">T-Shirt for Dogs</h3>
                 <h2 class="font-adlam text-5xl text-accent">$7.99</h2>
               </div>
-              <div class="img">
-                <img class="h-96 w-96" src="assets/cute-pet-mid.png" alt="">
+              <div class="img absolute bottom-5 right-5">
+                <img src="assets/cute-pet-mid.png" alt="">
               </div>
             </div>
           </div>
@@ -389,6 +393,56 @@
       </div>
      </section>
 
+
+
+     <!-- Footer Section -->
+     <footer class="bg-footerColor pt-80 pb-20 relative">
+
+    <!-- pawsome news -->
+    <div class="pawsome-news rounded-lg container w-5/6 bg-secondaryC grid grid-cols-2 place-items-center px-10 py-5 absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2">
+      <!-- left area -->
+       <div class="cat grid place-items-center">
+        <img src="assets/cute-dog-mid.png" alt="">
+       </div>
+       <!-- right area -->
+        <div class="content grid place-content-center">
+          <h2 class="font-adlam text-4xl mb-4">Get Pawsome News</h2>
+          <p class="text-xl">Exclusive training tips, tricks, product deals and more.</p>
+          <input type="text" placeholder="Enter email" class="text-lg input input-warning full my-4" />
+          <button class="btn btn-warning px-10 text-xl cursor-pointer">Subscribe</button>
+        </div>
+    </div>
+
+      <!-- Footer Container -->
+       <div class="container footer grid grid-cols-3 place-items-center">
+          <!-- footer left -->
+           <div class="ft-left">
+            <div class="logo flex gap-2 items-center">
+              <img src="assets/logo-footer.png" alt="">
+              <h3 class="text-2xl font-semibold">Browse Pets</h3>
+            </div>
+            <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+           </div>
+           <!-- footer middle -->
+            <div class="fl-middle">
+              <ul class="grid gap-4">
+                <li><a class="cursor-pointer text-lg" href="">Find a pet</a></li>
+                <li><a class="cursor-pointer text-lg" href="">Breeds</a></li>
+                <li><a class="cursor-pointer text-lg" href="">Contact us</a></li>
+              </ul>
+            </div>
+            <!-- footer right -->
+             <div class="fl-right">
+              <p>Follow Us</p>
+              <div class="icons flex gap-4">
+                <i class="fa-brands fa-facebook cursor-pointer text-lg"></i>
+                <i class="fa-brands fa-instagram cursor-pointer text-lg"></i>
+                <i class="fa-brands fa-linkedin cursor-pointer text-lg"></i>
+                <i class="fa-brands fa-youtube cursor-pointer text-lg"></i>
+              </div>
+             </div>
+      </div>
+    </footer>
 
 </body>
 </html>
