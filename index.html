@@ -70,7 +70,17 @@
             </div>
             <div class="nav-btn hidden lg:flex gap-5 items-center">
                 <div class="icons flex gap-5 items-center">
-                  <i class="fa-regular fa-bell text-2xl cursor-pointer"></i>
+                  
+                  <div class="relative">
+                    <!-- FontAwesome Bell Icon -->
+                    <i class="fas fa-bell text-xl text-gray-700"></i>
+                    <!-- Notification Effect -->
+                    <span class="absolute -top-1 -right-1 flex size-3">
+                      <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75"></span>
+                      <span class="relative inline-flex size-3 rounded-full bg-accent"></span>
+                    </span>
+                  </div>
+                  
                   <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
                 </div>
                 <button class="px-5 py-2 rounded-md border-solid border-2 border-accent hover:bg-accent">Login</button>
@@ -93,8 +103,11 @@
         <div class="header-img pt-36 lg:pt-0">
           <img src="assets/cat-big.png" alt="">
         </div>
+        <i class="fa-solid fa-arrow-down text-center text-5xl mt-5 animate-bounce text-accent"></i>
     </div>
+    
     </header>
+
 
     <!-- Category Section -->
     <section class="category-section my-10">
@@ -360,6 +373,39 @@
       </div>
 
      </div>
+
+     <!-- Gallery Section -->
+      <section class="gallery">
+        <div class="container w-[90%]">
+          <h2 class="font-adlam text-4xl mb-5">Our Galleries</h2>
+          <div class="carousel carousel-center rounded-box">
+            <div class="carousel-item">
+              <img src="assets/g1.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/g2.jpg"
+                alt="" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/g3.jpg"
+                alt="" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/g4.jpg"
+                alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/g5.jpg" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/g6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     
     <!-- Low Price Section -->
      <section class="lowPrice-section py-10 mb-80">
